@@ -2,10 +2,9 @@ import { httpServerHandler } from 'cloudflare:node';
 import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
+import * as process from 'node:process';
 
-// todo: env
-const CLIENT_ORIGIN = 'http://localhost:5173';
-
+const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || 'http://localhost:5173';
 const app = express();
 
 app.use(cookieParser());
