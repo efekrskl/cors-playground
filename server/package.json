@@ -6,21 +6,19 @@
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
-		"test": "vitest",
 		"cf-typegen": "wrangler types"
 	},
 	"dependencies": {
-		"@types/cookie-parser": "^1.4.10",
-		"cookie-parser": "^1.4.7",
-		"cors": "^2.8.5",
-		"express": "^5.2.1"
+		"@types/cookie-parser": "1.4.10",
+		"cookie-parser": "1.4.7",
+		"cors": "2.8.5",
+		"express": "5.2.1"
 	},
 	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "^0.8.19",
-		"@types/cors": "^2.8.19",
-		"@types/express": "^5.0.6",
-		"typescript": "^5.5.2",
-		"vitest": "~3.2.0",
-		"wrangler": "^4.53.0"
+		"@cloudflare/vitest-pool-workers": "0.8.19",
+		"@types/cors": "2.8.19",
+		"@types/express": "5.0.6",
+		"typescript": "5.5.2",
+		"wrangler": "4.53.0"
 	}
 }
