@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Github } from 'lucide-react';
 import { type TestDefinition, type TestResult, TESTS } from './tests.ts';
 
 const API_BASE_URL =
@@ -67,13 +67,34 @@ export default function CORSPlayground() {
   return (
     <div className="min-h-screen bg-gray-900 p-8">
       <div className="mx-auto max-w-2xl">
-        <div className="mb-12">
-          <h1 className="mb-2 text-4xl font-bold text-gray-50">
-            CORS Playground
-          </h1>
-          <p className="text-gray-400">
-            Test and understand CORS behavior with Express.js
-          </p>
+        <div className="mb-6 flex items-start justify-between gap-4">
+          <div>
+            <h1 className="mb-2 text-4xl font-bold text-gray-50">
+              🛝 CORS Playground
+            </h1>
+            <p className="text-gray-400">
+              Interactive CORS tests for the{' '}
+              <a
+                href="https://github.com/expressjs/cors"
+                target="_blank"
+                rel="noreferrer"
+                className="text-blue-400 hover:underline"
+              >
+                cors
+              </a>{' '}
+              middleware.
+            </p>
+          </div>
+
+          <a
+            href="https://github.com/efekrskl/cors-playground" // todo: point to the actual repo
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 rounded border border-gray-700 px-3 py-2 text-sm font-medium text-gray-200 transition hover:bg-gray-800"
+          >
+            <Github className="h-4 w-4" />
+            Contribute
+          </a>
         </div>
         <div className="space-y-2">
           {TESTS.map(test => {
