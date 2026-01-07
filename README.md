@@ -10,9 +10,28 @@ Live Demo: [CORS Playground](https://expressjs.com/)
 - `server/`: Contains the Express.js server code that handles CORS requests.
 - `client/`: Contains a minimal React application to test CORS requests.
 
-## Deployment
-The project is built for deployment on Cloudflare platform. To deploy the project, follow these steps:
+## Development
+To run the project locally for development, follow these steps:
 
+1. Change directory to your desired part (server or client):
+
+```bash
+cd server
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+```
+npm run dev
+```
+
+## Deployment
+See the [Deployment](DEPLOYMENT.md) file for detailed instructions on how to deploy the application.
 
 ##  Contributing
 
