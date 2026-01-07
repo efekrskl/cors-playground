@@ -4,7 +4,7 @@ This is a simple playground to experiment with Cross-Origin Resource Sharing (CO
 It includes a basic server and client setup to demonstrate how CORS works and how to configure it.
 Go through different requests and see how CORS headers affect the responses.
 
-Live Demo: [CORS Playground](https://expressjs.com/)
+Live Demo: [CORS Playground](https://cors-playground-client.pages.dev/)
 
 ## Project Structure
 - `server/`: Contains the Express.js server code that handles CORS requests.
