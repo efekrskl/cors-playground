@@ -22,4 +22,4 @@ The deployment is done using Cloudflare Platform's Git integration.
    - Add an environment variable `VITE_API_URL` with value set to your backend worker URL. (Can be found in the Workers dashboard after deploying the backend)
 7) Click on "Save and Deploy"
 
-As a last step, go back to your backend worker, and add a new environment variable `CLIENT_ORIGIN` with value set to your frontend pages URL. (Can be found in the Pages dashboard after deploying the frontend)
+As a last step, go back to your backend worker, under "Variables and Secrets" (and not "Build") add a new environment variable `CLIENT_ORIGIN` with value set to your frontend pages URL. (Can be found in the Pages dashboard after deploying the frontend)
