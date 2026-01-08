@@ -84,8 +84,11 @@ export default function CORSPlayground() {
               </a>{' '}
               middleware.
             </p>
+            <div className="border-l-4 border-gray-700 pl-4 mt-4 text-sm text-gray-400">
+              Tip: Open your browser&apos;s developer console to see the network
+              requests and CORS errors in action.
+            </div>
           </div>
-
           <a
             href="https://github.com/efekrskl/cors-playground" // todo: point to the actual repo
             target="_blank"
