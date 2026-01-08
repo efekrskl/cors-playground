@@ -47,14 +47,14 @@ app.get('/credentials-allowed', cors({ origin: CLIENT_ORIGIN, credentials: true 
 		})
 		.json({
 			endpoint: '/credentials-allowed',
-			message: 'Credentials enabled; cookie should be set.',
+			message: 'Credentials enabled, cookie should be set.',
 		});
 });
 
 app.get('/credentials-misconfigured', cors({ origin: '*', credentials: true }), (_req, res) => {
 	res.json({
 		endpoint: '/credentials-misconfigured',
-		message: 'Misconfigured: Access-Control-Allow-Origin: * with credentials: true.',
+		message: 'Misconfigured, Access-Control-Allow-Origin: * with credentials: true.',
 	});
 });
 
